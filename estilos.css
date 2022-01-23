@@ -94,6 +94,8 @@ body {
 
     display: flex;
     justify-content: space-between;
+
+    position: relative;
 }
 
 /* Configurando os Stories*/
@@ -321,7 +323,11 @@ body {
 /* Sidebar */
 .sidebar {
     width: 293px;
-    /*background-color: blue;*/
+    left: 640px;
+
+    align-self: flex-start;
+    position: sticky;
+    top: 88px;
 }
 
 /* Perfil */
