@@ -80,6 +80,7 @@ body {
 .icones-notificacoes {
     margin-right: 9px;
 }
+
 .icones-notificacoes ion-icon {
     margin-left: 20px;
 }
@@ -441,27 +442,110 @@ body {
 
     color: #C7C7C7;
 
-    margin-top: 18px;   
+    margin-top: 18px;
 }
 
-/* Página com menos de 935px de largura */
+/* Responsividade para páginas com menos de 935px de largura */
 @media (max-width: 935px) {
-    .sidebar{
+    .sidebar {
         display: none;
     }
 
-    .conteudo-pagina{
+    .conteudo-pagina {
         width: 614px;
     }
 
-    .conteudo-barra-topo{
+    .conteudo-barra-topo {
         width: 100%;
     }
 
-    .logo-instagram{
+    .logo-instagram {
         margin-left: 20px;
     }
+
     .icones-notificacoes {
         margin-right: 19px;
     }
+}
+
+/* Responsividade para mobile: páginas com menos de 614px de largura */
+@media (max-width: 614px) {
+    .barra-topo {
+        width: 100vw;
+    }
+    .conteudo-barra-topo {
+        width: 100vw;
+    }
+
+    .barra-pesquisar, .icones-notificacoes ion-icon:nth-child(2), .icones-notificacoes ion-icon:nth-child(3), .icones-notificacoes ion-icon:nth-child(4) {
+        display: none;
+    }
+
+    .icones-notificacoes ion-icon:first-child {
+        margin-left: 0px;
+    }
+
+    .icones-notificacoes {
+        margin-right: 20px;
+    }
+
+    .logo-instagram ion-icon {
+        padding-right: 0px;
+        border-right: 0px;
+    }
+
+    .logo-instagram img {
+        width: 103px;
+        height: 29px;
+
+        position:absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    /*Conteúdo da Página */
+    .conteudo-pagina {
+        margin: 0 auto;
+        margin-top: 54px;
+
+        width: 100vw;
+        position: relative;
+    }
+
+    /* Configurando os Stories*/
+    .stories {
+        width: 100vw;
+        height: 118px;
+
+        background-color: #E5E5E5;
+        border: 0px;
+        border-radius: 0px;
+
+    }
+
+    .stories ion-icon {
+        display: none;
+    }
+    
+    
+    /* Posts */
+    .posts {
+        margin-top: 0px;
+    }
+    
+    .post {
+        width: 100vw;
+    }
+
+    /* Imagem */
+    .post-imagem {
+        width: 100%;
+    }
+
+    .post-imagem img {
+        width: 100%;
+    }
+
 }
