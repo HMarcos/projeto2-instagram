@@ -445,6 +445,26 @@ body {
     margin-top: 18px;
 }
 
+/* Barra Final */
+.barra-final {
+    
+
+    display: none;
+}
+
+.barra-final ion-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.barra-final ion-icon:first-child {
+    margin-left: 20px;
+}
+
+.barra-final ion-icon:last-child {
+    margin-right: 20px;
+}
+
 /* Responsividade para páginas com menos de 935px de largura */
 @media (max-width: 935px) {
     .sidebar {
@@ -473,11 +493,14 @@ body {
     .barra-topo {
         width: 100vw;
     }
+
     .conteudo-barra-topo {
         width: 100vw;
     }
 
-    .barra-pesquisar, .icones-notificacoes ion-icon:nth-child(2), .icones-notificacoes ion-icon:nth-child(3), .icones-notificacoes ion-icon:nth-child(4) {
+    .barra-pesquisar, .icones-notificacoes ion-icon:nth-child(2), 
+    .icones-notificacoes ion-icon:nth-child(3), 
+    .icones-notificacoes ion-icon:nth-child(4) {
         display: none;
     }
 
@@ -498,7 +521,7 @@ body {
         width: 103px;
         height: 29px;
 
-        position:absolute;
+        position: absolute;
         top: 50%;
         left: 50%;
 
@@ -528,13 +551,13 @@ body {
     .stories ion-icon {
         display: none;
     }
-    
-    
+
+
     /* Posts */
     .posts {
         margin-top: 0px;
     }
-    
+
     .post {
         width: 100vw;
     }
@@ -548,4 +571,21 @@ body {
         width: 100%;
     }
 
+    /*Barra Final */
+    .barra-final {
+        width: 100%;
+        height: 54px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color:#FFFFFF;
+        border: 1px solid #DBDBDB;
+
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        z-index: 1;
+    }
 }
