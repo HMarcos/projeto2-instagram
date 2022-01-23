@@ -78,7 +78,7 @@ body {
 }
 
 .icones-notificacoes {
-    margin-right: 8px;
+    margin-right: 9px;
 }
 .icones-notificacoes ion-icon {
     margin-left: 20px;
@@ -442,4 +442,26 @@ body {
     color: #C7C7C7;
 
     margin-top: 18px;   
+}
+
+/* Página com menos de 935px de largura */
+@media (max-width: 935px) {
+    .sidebar{
+        display: none;
+    }
+
+    .conteudo-pagina{
+        width: 614px;
+    }
+
+    .conteudo-barra-topo{
+        width: 100%;
+    }
+
+    .logo-instagram{
+        margin-left: 20px;
+    }
+    .icones-notificacoes {
+        margin-right: 19px;
+    }
 }
